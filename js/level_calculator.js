@@ -1,12 +1,9 @@
 (function() {
     const LEVEL_ORDER = ['A1–', 'A1+', 'A2–', 'A2+', 'B1–', 'B1+', 'B2', 'C1'];
     const THRESHOLD_REQUIREMENTS = { 0: 48, 1: 63, 2: 75, 3: 80, 4: 80, 5: 90, A0_MIN_PASS: 48 };
-
-    // --- 1. Глобальные Константы для Оценки ---
     const CORRECT_POINTS = 1;
     const PENALTY_POINTS = -0.2;
 
-    // --- 2. Функция подсчёта баллов по уровням и сбора фидбека ---
     function calculateLevelScores() {
         const userAnswersString = sessionStorage.getItem('testAnswers');
         const userAnswers = JSON.parse(userAnswersString) || {};
@@ -54,8 +51,6 @@
                 });
             }
 
-            // ⭐️ ВСТАВКА: Сбор пропущенных ответов
-            // Проверяем, что ответ отсутствует (null/undefined/пустая строка)
             else if (!userAnswer) { 
                 const pageNameParts = questionName.split('-');
                 const pageId = pageNameParts.slice(0, 2).join('-'); 
@@ -67,7 +62,7 @@
                     correctAnswer: 'N/A', 
                     topic: question.topic, 
                     taskQuote: '', 
-                    isSkipped: true // Ключевой флаг для feedback.js
+                    isSkipped: true 
                 });
             }
         }
@@ -79,7 +74,6 @@
         };
     }
 
-    // --- determineFinalLevel() ---
     function determineFinalLevel(levelScores, levelMaxScores) {
         const levelResults = {};
         for (const level of LEVEL_ORDER) {
@@ -122,18 +116,11 @@
         return finalLevel;
     }
 
-    // --- 3. ФИНАЛЬНАЯ ФУНКЦИЯ: ОРКЕСТРАЦИЯ И ПЕРЕНАПРАВЛЕНИЕ ---
     function calculateAndRedirect(event) {
-        // Останавливаем стандартное действие ссылки
         event.preventDefault(); 
         
-        // 1. ЕДИНОЖДЫ ВЫЗЫВАЕМ РАСЧЕТ И ПОЛУЧАЕМ ВСЕ ДАННЫЕ
         const { levelScores, levelMaxScores, feedbackDetails } = calculateLevelScores();
-        
-        // 2. ОПРЕДЕЛЯЕМ ФИНАЛЬНЫЙ УРОВЕНЬ, передавая ему результаты
         const finalLevel = determineFinalLevel(levelScores, levelMaxScores); 
-
-        // ⭐️ НОВОЕ: Рассчитываем проценты для статистики
         const levelStats = {};
         for (const level in levelMaxScores) {
             if (levelMaxScores[level] > 0) {
@@ -144,27 +131,20 @@
             }
         }
 
-        // ⭐️ НОВОЕ: Сохраняем ПОЛНЫЙ ОТЧЕТ для TXT-файла (НЕ ДЛЯ HTML)
         const fullReportData = {
             finalLevel: finalLevel,
             levelStats: levelStats,
-            // feedbackDetails уже содержит ошибки и пропуски (это было добавлено ранее)
             feedbackDetails: feedbackDetails 
         };
         sessionStorage.setItem('fullReportDataForTXT', JSON.stringify(fullReportData));
-
-        // 3. СОХРАНЯЕМ ФИДБЕК для нового скрипта отчета (report_display.js)
         sessionStorage.setItem('reportFeedback', JSON.stringify(feedbackDetails));
-
-        // 4. ОЧИСТКА sessionStorage от ответов (они больше не нужны)
         sessionStorage.removeItem('testAnswers');
         sessionStorage.removeItem('testQuotes'); 
-
-        // 5. ПЕРЕНАПРАВЛЕНИЕ
+        
         window.location.href = `result-${finalLevel}.html`;
     }
 
-    // 6. ПРИВЯЗКА К КНОПКЕ
+  
     document.addEventListener('DOMContentLoaded', () => {
         const resultsButton = document.getElementById('results-button');
         if (resultsButton) {
@@ -172,4 +152,4 @@
         }
     });
 
-})(); // Конец IIFE
+})(); 
