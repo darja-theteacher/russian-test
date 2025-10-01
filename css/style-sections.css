@@ -52,24 +52,19 @@ body {
 }
 
 .progress-step:hover::before {
-    /* Меняем цвет иконки на фирменный фиолетовый */
     color: #644fc1;
 }
 
-/* --- Стили для всплывающего попапа --- */
+/* --- popup --- */
 .progress-step::after {
     position: absolute;
-    bottom: 2.2vw; /* Отступ над иконкой */
+    bottom: 2.2vw; 
     left: 50%;
     transform: translateX(-50%);
-    
-    /* Начальное состояние: скрыт */
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
-    
-    /* Общий вид */
     min-width: 8vw;
     padding: 0.2vw 0.7vw;
     font-family: 'Caveat', cursive;
@@ -83,14 +78,12 @@ body {
     z-index: 50; 
 }
 
-/* --- Появление попапа при наведении --- */
 .progress-step:hover::after {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-0.5vw); 
 }
 
-/* --- Текст для каждого попапа --- */
 .progress-indicator a[href="reading-pt-1.html"]::after { content: 'Reading, Text 1'; }
 .progress-indicator a[href="reading-pt-2.html"]::after { content: 'Reading, Text 2'; }
 .progress-indicator a[href="reading-pt-3.html"]::after { content: 'Reading, Text 3'; }
@@ -105,13 +98,11 @@ body {
     z-index: 51;
 }
 
-/* Стиль для шага "в процессе" */
 .progress-step.in-progress::before {
     font-weight: 600;
     content: '\f042';
 }
 
-/* Стиль для "пройденного" шага */
 .progress-step.done::before {
     font-weight: 900;
     content: '\f058';
@@ -186,7 +177,7 @@ body {
     padding-right: 1.5vw;
     padding-left: 1.5vw;
     line-height: 1.7vw;
-    /* Стрелка */
+    /* arrow */
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff99cc"><path d="M7 10l5 5 5-5z"/></svg>'); /* Стрелка */
     background-repeat: no-repeat; 
     background-position: right center; 
@@ -198,18 +189,16 @@ body {
 }
 
 .gap-select.is-empty {
-    width: 7vw; /* Ширина пустого поля */
+    width: 7vw; 
 }
 
 .gap-select {
-    width: auto; /* Позволяем элементу автоматически подстраиваться под содержимое */
+    width: auto; 
 }
 
 /* --- block B ---*/
 .block-B {
     width: 100%;
-
-/*    background-color: lavender; */
 }
 
 .block-content.content-B {
