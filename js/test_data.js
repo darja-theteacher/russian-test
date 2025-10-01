@@ -1,5 +1,5 @@
 const TEST_DATA = {
-    // Reading, Part 1, вопросы типа SELECT
+    // Reading, Part 1
     'reading-pt1-gap1': {
         correct: 'университетe', level: 'A1–',
         topic: 'The Prepositional case for place (A1–): when we\'re talking about a place (<em>где?</em>), we use the Prepositional case (<em>ком?/чём?</em>) with the preposition <strong>в</strong> or <strong>на</strong>. The word <strong>университет</strong> is masculine, so in the Prepositional case, it gets the ending <strong>-е</strong>.'
@@ -60,7 +60,6 @@ const TEST_DATA = {
         correct: 'ужин', level: 'A1+',
         topic: 'Vocabulary for daily activities: work, study, rest, breakfast, lunch, dinner, and so on (A1+).'
     },
-    // Reading, Part 1, вопросы типа RADIOBUTTON
     'reading-pt1-q1': {
         correct: 'В офисе', level: 'A1+',
         topic: 'Understanding facts in a text, using the question word <strong>где?</strong> (A1+): you can find the answer to this question in sentence 3 of text 1: А я программист, я работаю <strong>в офисе</strong>.'
@@ -74,8 +73,7 @@ const TEST_DATA = {
         topic: 'Understanding facts in a text and time markers (A1+): you can find the answer to this question in sentence 4 of text 1: Каждый день я встаю рано утром, <strong>завтракаю и читаю</strong> журнал.'
     },
 
-
-    // Reading, Part 2, вопросы типа SELECT
+    // Reading, Part 2
     'reading-pt2-gap1': {
         correct: 'решил', level: 'A2–',
         topic: 'Verb aspect in the past tense (A2–): to show a completed action in the past, we use a <strong>perfective</strong> verb in the past tense.'
@@ -128,7 +126,6 @@ const TEST_DATA = {
         correct: 'в', level: 'A2+',
         topic: 'Prepositions in set expressions (A2+): we use the preposition в to show not only a physical location, but also to show being part of or inside a group (в компании, в группе, etc.).'
     },
-    // Reading, Part 2, вопросы типа RADIOBUTTON
     'reading-pt2-q1': {
         correct: 'В центр города', level: 'A2+',
         topic: 'The question word <strong>куда?</strong> for movement and purpose (A2+): the answer to this question is in sentence 1 of text 2.'
@@ -143,7 +140,7 @@ const TEST_DATA = {
     },
 
 
-    // Reading, Part 3, вопросы типа SELECT
+    // Reading, Part 3
     'reading-pt3-gap1': {
         correct: 'посетила', level: 'A2+',
         topic: 'Distinguishing verbs of motion and visiting with their aspectual and semantic nuances (A2+): to describe a single, purposeful visit to some place, we use the verb <strong>посетить</strong>.'
@@ -192,7 +189,6 @@ const TEST_DATA = {
         correct: 'буду любить', level: 'B1–',
         topic: 'Imperfective verbs in the future tense (B1–): we use the complex future tense, formed by <strong>быть + the infinitive of the main verb</strong>, to show a long-lasting or continuous action in the future.'
     },
-    // Reading, Part 3, вопросы типа RADIOBUTTON
     'reading-pt3-q1': {
         correct: 'все котята нуждались в доме', level: 'A2+',
         topic: 'Understanding cause and effect (A2+): by analysing sentence 4 of text 3 we can find the answer to this question.'
@@ -207,7 +203,7 @@ const TEST_DATA = {
     },
 
 
-    // Reading, Part 4, вопросы типа SELECT
+    // Reading, Part 4
     'reading-pt4-gap1': {
         correct: 'из-за которого', level: 'B2',
         topic: 'Subordinate clauses of reason (B2): <strong>из-за которого</strong> is the only construction that both expresses a cause-and-effect relationship and agrees with the noun <strong>состояние</strong> (neuter, singular). It shows that the state itself is the reason.'
@@ -256,7 +252,6 @@ const TEST_DATA = {
         correct: 'обратитесь', level: 'B1+',
         topic: 'Set expressions and collocations (B1+): the expression <strong>обратиться к</strong> + Dative case is a set expression that means \'to ask for help, ask a question, or make a request to someone\'.'
     },
-    // Reading, Part 4, вопросы типа RADIOBUTTON
     'reading-pt4-q1': {
         correct: 'полностью истощает', level: 'B2',
         topic: 'Analysis and generalisation of information (B2): we can get the answer to this question by analysing sentence 2 of text 4.'
@@ -274,7 +269,7 @@ const TEST_DATA = {
         topic: 'Generalising and identifying the main idea (B2–C1): we can get the answer to this question by analysing sentences 4-7 of text 4.'
     },
 
-    // Reading, Part 5, вопросы типа SELECT
+    // Reading, Part 5
     'reading-pt5-gap1': {
         correct: 'уверенно', level: 'B1–',
         topic: 'Adverbs with emotional-modal overtones (B1–): we use the adverb <strong>уверенно</strong> to describe a high degree of certainty, when the speaker does not doubt their words. It emphasizes firmness and a lack of hesitation in the statement.'
@@ -331,7 +326,6 @@ const TEST_DATA = {
         correct: 'но и', level: 'B2',
         topic: 'Correlative conjunctions (B2): we use the conjunction <strong>не только..., но и...</strong> to add and emphasise information, showing that the second part is just as important as the first.'
     },
-    // Reading, Part 5, вопросы типа RADIOBUTTON
     'reading-pt5-q1': {
         correct: 'благодаря его первым снимкам', level: 'B2',
         topic: 'Understanding text details, identifying inconsistencies in a text (B2).'
@@ -350,7 +344,7 @@ const TEST_DATA = {
     },
 
 
-    // Listening, Part 1, вопросы типа RADIOBUTTON
+    // Listening, Part 1
     'listening-pt1-q1': {
         correct: 'Неправда', level: 'A1–',
         topic: 'Direct statements (A1–): the audio says: “Грета из Швеции, но она <strong>живёт в России</strong>.”'
@@ -363,7 +357,7 @@ const TEST_DATA = {
         correct: 'работает в студии', level: 'A2–',
         topic: 'Generalising characteristics, differentiating between past and present, differentiating details that are similar in meaning (A2–).'
     },
-    // Listening, Part 2, вопросы типа RADIOBUTTON
+    // Listening, Part 2
     'listening-pt2-q1': {
         correct: 'Неправда', level: 'A2–',
         topic: 'Numerical ranges (A2–): the audio says: “Эта кошка весит примерно как маленький котёнок — <strong>от одного до полутора</strong> килограммов.”'
@@ -376,7 +370,7 @@ const TEST_DATA = {
         correct: 'быстро двигается', level: 'B1–',
         topic: 'Synthesizing information: comparing several details and understanding their how they are connected to choose the most complete and accurate statement (B1).'
     },
-    // Listening, Part 3, вопросы типа RADIOBUTTON
+    // Listening, Part 3
     'listening-pt3-q1': {
         correct: 'Неправда', level: 'B1–',
         topic: 'Distinguishing the object of the statement, rhetorical question (B1–): in the audio, the author talks about general ideas, not about their personal ideas as being weird.'
@@ -390,7 +384,7 @@ const TEST_DATA = {
         topic: 'Synthesis of information and identifying the main idea (B2–C1): the main idea of the audio can be generally expressed by the author\'s rhetorical question: “Может, просто надо отстать друг от друга и жить спокойно свою жизнь?”.'
     },
 
-    // Grammar test, вопросы типа RADIOBUTTON
+    // Grammar test
     'grammar-q1': {
         correct: 'работы', level: 'A1+',
         topic: 'The Genitive case for absence (A1+): to say that someone doesn\'t have something, we use the construction <strong>\'у + Gen. + нет + Gen.\'</strong>'
