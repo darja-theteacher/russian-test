@@ -241,7 +241,7 @@ body {
 .answer-quote .user-answer::before,
 .answer-quote .correct-answer::before {
   font-family: "Font Awesome 6 Free";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.3vw; 
   color: #ff99cc;
   margin-right: 1vw;

@@ -107,7 +107,7 @@ body {
 
 /* Стиль для шага "в процессе" */
 .progress-step.in-progress::before {
-    font-weight: 400;
+    font-weight: 600;
     content: '\f042';
 }
 
@@ -177,6 +177,7 @@ body {
     appearance: none;
     background: transparent;
     border: solid 0.1vw rgba(255, 153, 204, 0.35);
+    border-radius: 0.4vw;
     font-family: inherit;
     font-size: inherit;
     font-weight: 400;
@@ -248,7 +249,7 @@ body {
 .radio-input:checked + .radio-lable::after {
     content: '\f00c'; 
     font-family: "Font Awesome 6 Free";
-    font-weight: 400;
+    font-weight: 600;
     position: absolute;
     top: 50%;
     left: 0.2vw;
