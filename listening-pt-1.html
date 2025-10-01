@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening, Part 1/3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sections.css">
+    <link rel="stylesheet" href="css/style-sections-listening.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-left">
+            <h1 class="page-title">Section 2: Listening</h1>
+            <div class="progress-indicator">
+                <a href="reading-pt-1.html" class="progress-step done"></a>
+                <a href="reading-pt-2.html" class="progress-step done"></a>
+                <a href="reading-pt-3.html" class="progress-step done"></a>
+                <a href="reading-pt-4.html" class="progress-step done"></a>
+                <a href="reading-pt-5.html" class="progress-step done"></a>
+                <a href="listening-pt-1.html" class="progress-step in-progress"></a>
+                <a href="listening-pt-2.html" class="progress-step"></a>
+                <a href="listening-pt-3.html" class="progress-step"></a>
+                <a href="grammar-test.html" class="progress-step"></a>
+            </div>
+        </div>
+        <a href="index.html" class="button header-button">❮❮❮ 'Main Page'</a>
+    </header>
+
+    <main class="main-content">
+
+        <div class="block-A">
+            <div class="block-header">
+                <div class="block-lable">A.</div>
+                <div class="block-title">Listen to the audio.<br>You can play it <b>twice!</b></div>
+            </div>
+            <div class="block-content content-A">
+                <div class="block-content-audio">
+                    <p class="block-content-title">Аудио 1. Моя лучшая подруга</p>
+                    <audio id="custom-player">
+                        <source src="assets/audios/audio-1-moya-luchshaya-podruga.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="custom-player-controls">
+                        <button class="player-button"></button>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-B">
+            <div class="block-header">
+                <div class="block-lable">B.</div>
+                <div class="block-title">Choose 'Правда' or 'Неправда' for each<br>statement and answer the question.</div>
+            </div>
+            <div class="block-content content-B">
+                <div class="block-item">
+                    <p id="quote-listening-pt1-q1" class="block-question">1. Грета живёт в Швеции.</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt1-q1-true" name="listening-pt1-q1" value="Правда" />
+                        <label class="radio-lable" for="listening-pt1-q1-true">Правда</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt1-q1-false" name="listening-pt1-q1" value="Неправда" />
+                        <label class="radio-lable" for="listening-pt1-q1-false">Неправда</label>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <p id="quote-listening-pt1-q2" class="block-question">2. Автор текста познакомислась с Гретой в студии.</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt1-q2-true" name="listening-pt1-q2" value="Правда" />
+                        <label class="radio-lable" for="listening-pt1-q2-true">Правда</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt1-q2-false" name="listening-pt1-q2" value="Неправда" />
+                        <label class="radio-lable" for="listening-pt1-q2-false">Неправда</label>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <p id="quote-listening-pt1-q3" class="block-question">3. Что можно сказать о Грете?</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt1-q3-opt1" name="listening-pt1-q3" value="живёт в Швеции" />
+                        <label class="radio-lable" for="listening-pt1-q3-opt1">Она из Швеции, она дизайнер и работает в офисе.</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt1-q3-opt2" name="listening-pt1-q3" value="плохо говорит по-русски" />
+                        <label class="radio-lable" for="listening-pt1-q3-opt2">Она весёлая, плохо говорит по-русски и работает в бюро.</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt1-q3-opt3" name="listening-pt1-q3" value="работает в студии" />
+                        <label class="radio-lable" for="listening-pt1-q3-opt3">Она добрая, весёлая и работает в студии.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a class="button" href="reading-pt-5.html">❮❮❮ 'Back'</a>
+            <a class="button" href="listening-pt-2.html">'Next' ❯❯❯</a>
+        </div>
+
+    </main>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/test_data.js"></script>
+    <script src="js/session-storage-logic.js"></script>
+    <script src="js/script-listening.js"></script>
+</body>
+
+</html>

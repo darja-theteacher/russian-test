@@ -1,0 +1,160 @@
+.main-title {
+    padding-left: 7vw;
+}
+
+.rules-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 7vw;
+    font-size: 1.1vw;
+}
+
+.rule-item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 70%;
+    margin: 0 20vw;
+    
+}
+
+.rule-number {
+    font-size: 3vw;
+    font-family: 'Caveat', cursive; 
+    color: #ff99cc;
+    line-height: 1vw;
+    font-weight: 600;
+    
+}
+
+.rule-text {
+    padding-top: 0.5vw;
+    font-size: 1.2vw;
+
+}
+
+.highlighted-text {
+    color: #ff99cc;
+    font-weight: 600;
+    position: relative; 
+    display: inline-block;
+}
+
+.highlighted-text::after {
+    content: '';
+    position: absolute;
+    bottom: -0.4vw;
+    left: -0.4vw;
+    width: 103%;
+    height: 0.5vw;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 5"%3E%3Cpath fill="none" stroke="%23ff99cc" stroke-width="1" d="M0 4 Q5 3 10 4 T20 4"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: repeat-x;
+}
+
+/* --- reminder --- */
+.reminder {
+    display: flex;
+    position: relative;
+    top: -17vw;
+    left: 77vw; 
+}
+
+.reminder-text {
+    position: absolute;
+    top:  -3.8vw;
+    left: -1.8vw;
+    
+    font-family: 'Caveat', cursive;
+    font-size: 1.7vw;
+    line-height: 1.4vw;
+    color: #664fc1;
+    
+    transform: rotate(10deg); 
+}
+
+.reminder-arrow {
+    position: absolute;
+    top:  -0.6vw;
+    left: 2.3vw;
+    
+    width: 3vw;
+    
+}
+
+.interactive-dot {
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: #664fc1;
+    border-radius: 50%;
+}
+
+.interactive-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+    width: 2vw;
+    height: 2.1vw;
+    background-color: rgba(100, 79, 193, 0.2);
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+    z-index: -1;
+    animation: morphing 3s infinite ease-in-out;
+}
+
+@keyframes morphing {
+    0% {
+        border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+    }
+    50% {
+        border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+    }
+}
+
+/* --- popup--- */
+.popup-text {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+    top: 0;
+    left: -50vw; 
+    transform: translate(65%, -25%);
+    width: 30vw;
+    height: 30vw;
+    padding: 7.5vw 4.5vw;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 1.7vw;
+    font-weight: 400;
+    line-height: 2.8vw;
+    background-color: #efebff;
+    color: #644fc1;
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+}
+
+
+.highlighted-text.popup::after {
+    bottom: -0.1vw;
+    left: -0.4vw;
+    width: 103%;
+    height: 0.5vw;
+}
+
+.reminder:hover .popup-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* --- buttons --- */
+.button {
+    margin-top: 7vw;
+    width: 13.5vw;
+}

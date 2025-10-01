@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result: A1+</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-results.css">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <p class="pre-title">It looks like your level is</p>
+            <h1 id="result-A1+" class="main-title main-title-A1+">A1+ / Beginner</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="results-content">
+                <div class="tabs-container">
+                    <button class="tab-button active" data-tab-target="#cans-content">strong points</button>
+                    <button class="tab-button" data-tab-target="#cant-content">areas for growth</button>
+                    <button class="tab-button" data-tab-target="#test-report">wrong answers list</button>
+                </div>
+                
+                <div class="results-container">
+                    <div id="cans-content" class="tab-panel active">
+                        <h3 class="panel-title">You most likely...</h3>
+
+                        <ul class="can-list can-list-A1+">
+                            <li>can tell quite a bit about your family, job, hobbies, and daily activities;</li>
+                            <li>feel comfortable shopping, having meals at cafes, purchasing train or plane tickets, and booking hotels;</li>
+                            <li>know for sure that the phrase «Временами дождь» is a green flag to grab your umbrella;</li>
+                            <li>are not surprised by the fact that «шёл» and «идти» are the same word;</li>
+                            <li>understand why you have красное яблоко but don’t have красного яблока;</li>
+                            <li>know how to let a noisy Russian neighbor know they're bothering you, explain why, and voice your discontent.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="cant-content" class="tab-panel">
+                        <h3 class="panel-title">But you probably still...</h3>
+                        <ul class="cant-list cant-list-A1+"> 
+                            <li>struggle to provide the full context or backstory of your annoyance with the noisy Russian neighbor;</li>
+                            <li>are confused by phrases like «шёл, шёл и пришёл» and «пошло-поехало»;</li>
+                            <li>aren't quite sure if you want to «почитать» or «прочитать» a book;</li>
+                            <li>hesitate whether you're walking «по», «на», or «в» the street.</li>
+                        </ul>
+                    </div>
+
+                    <div id="test-report" class="tab-panel report">
+                            <h3 class="panel-title">Wrong answer #<span class="wrong-answer-number"></span></h3>
+                            <p class="sub-title"></p>
+
+                            <div class="report-quote">
+                                <p class="task-quote"></p>
+                                <p class="answer-quote">&#8203;<span class="user-answer"></span></p>
+                                <p class="answer-quote">&#8203;<span class="correct-answer"></span></p>
+                            </div>
+
+                            <p class="topic"></p>
+                    </div>
+
+                    <p class="results-yapping results-yapping-A1+">It's an excellent result and a clear sign of how much effort you've put in – you're doing so well! You're probably feeling much more confident in the language now. Perhaps you don't always grasp the logic of the language yet, and some constructions and rules still confuse you. It's absolutely okay! If you ever feel like you need more explanations and guidance, just remember I'm always <a class="yapping-link" href="https://forms.gle/ZooS8dcTkAj3sdx1A">here</a> to offer advice, and I'd be very happy to help you!</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="index.html" class="button">❮❮❮ 'Main Page'</a>
+                <button id="save-report-button" class="button save-report-button">save .txt list</button>
+            </div>
+        </main>
+
+        <script src="js/test_data.js"></script>
+        <script src="js/session-storage-logic.js"></script>
+        <script src="js/feedback.js"></script>
+        <script src="js/script-results.js"></script>
+    </body>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+</html>

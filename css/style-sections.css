@@ -1,0 +1,266 @@
+body {
+    padding-left: 10vw;
+    padding-right: 5vw;
+    padding-top: 4vw;
+}
+/* --- header ---*/
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 0.3vw;
+    padding-bottom: 4vw;
+    padding-right: 5.5vw; 
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3vw;
+}
+
+.page-title {
+    color: #ff99cc;
+    font-size: 2.5vw;
+}
+
+.progress-indicator {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.progress-step {
+    position: relative;
+    width: 1.4vw;
+    height: 1.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.progress-step::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: '\f111';
+    font-size: 1.4vw;
+    color: #ff99cc;
+    transition: color 0.3s ease;
+}
+
+.progress-step:hover::before {
+    /* Меняем цвет иконки на фирменный фиолетовый */
+    color: #644fc1;
+}
+
+/* --- Стили для всплывающего попапа --- */
+.progress-step::after {
+    position: absolute;
+    bottom: 2.2vw; /* Отступ над иконкой */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Начальное состояние: скрыт */
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    
+    /* Общий вид */
+    min-width: 8vw;
+    padding: 0.2vw 0.7vw;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #fff;
+    background-color: #644fc1;
+    border-radius: 0.7vw;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 50; 
+}
+
+/* --- Появление попапа при наведении --- */
+.progress-step:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-0.5vw); 
+}
+
+/* --- Текст для каждого попапа --- */
+.progress-indicator a[href="reading-pt-1.html"]::after { content: 'Reading, Text 1'; }
+.progress-indicator a[href="reading-pt-2.html"]::after { content: 'Reading, Text 2'; }
+.progress-indicator a[href="reading-pt-3.html"]::after { content: 'Reading, Text 3'; }
+.progress-indicator a[href="reading-pt-4.html"]::after { content: 'Reading, Text 4'; }
+.progress-indicator a[href="reading-pt-5.html"]::after { content: 'Reading, Text 5'; }
+.progress-indicator a[href="listening-pt-1.html"]::after { content: 'Listening, Audio 1'; }
+.progress-indicator a[href="listening-pt-2.html"]::after { content: 'Listening, Audio 2'; }
+.progress-indicator a[href="listening-pt-3.html"]::after { content: 'Listening, Audio 3'; }
+.progress-indicator a[href="grammar-test.html"]::after { content: 'Grammar Test'; }
+
+.progress-step::before {
+    z-index: 51;
+}
+
+/* Стиль для шага "в процессе" */
+.progress-step.in-progress::before {
+    font-weight: 400;
+    content: '\f042';
+}
+
+/* Стиль для "пройденного" шага */
+.progress-step.done::before {
+    font-weight: 900;
+    content: '\f058';
+}
+
+/* --- main ---*/
+.main-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- block A --- */
+.block-header {
+    display: flex;
+    align-items: center;
+    color: #ff99cc;
+    gap: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.block-lable {
+    font-size: 3.5vw;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-title {
+    font-size: 1.11vw;
+}
+
+.block-content {
+    width: 90%;
+    margin-left: 3vw;
+    margin-bottom: 3.5vw;
+    padding: 3vw 5vw;
+    font-size: 1.11vw;
+    color: #434343;
+    line-height: 2vw;
+    text-align: justify;
+    border: solid 0.1vw #f1f1f1;
+    border-radius: 2vw;
+    background-color: rgba(251, 251, 251, 0.5);
+}
+
+.block-content-title {
+    font-size: 1.11vw;
+    padding-bottom: 1.5vw;
+}
+
+.block-content-text {
+    text-indent: 1.5vw;
+    line-height: 2.1vw;
+}
+
+.gap-select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: solid 0.1vw rgba(255, 153, 204, 0.35);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    color: #434343;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    line-height: 1.7vw;
+    /* Стрелка */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff99cc"><path d="M7 10l5 5 5-5z"/></svg>'); /* Стрелка */
+    background-repeat: no-repeat; 
+    background-position: right center; 
+    background-size: 1.3vw;
+} 
+
+.gap-select:focus {
+    outline: none;
+}
+
+.gap-select.is-empty {
+    width: 7vw; /* Ширина пустого поля */
+}
+
+.gap-select {
+    width: auto; /* Позволяем элементу автоматически подстраиваться под содержимое */
+}
+
+/* --- block B ---*/
+.block-B {
+    width: 100%;
+
+/*    background-color: lavender; */
+}
+
+.block-content.content-B {
+    margin-bottom: 2vw;
+}
+
+.block-answer {
+    padding: 0.5vw 0 1.5vw 1.7vw;
+    line-height: 2.5vw;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-lable {
+    position: relative;
+    padding-left: 2.5vw;
+    cursor: pointer;
+    line-height: 1.5vw;
+    display: inline-block;
+}
+
+.radio-lable::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1.2vw;
+    height: 1.2vw;
+    border: solid 0.1vw #ff99cc;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.radio-input:checked + .radio-lable::after {
+    content: '\f00c'; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 0.2vw;
+    transform: translateY(-65%);
+    font-size: 1.4vw;
+    color: #ff99cc;
+}
+
+/* --- buttons ---*/
+.button {
+    font-size: 1vw;
+    padding: 0.5vw;
+    width: 12vw;
+    margin-bottom: 3vw;
+}

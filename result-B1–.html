@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result: B1—</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-results.css">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <p class="pre-title">It looks like your level is</p>
+            <h1 id="result-B1-" class="main-title main-title-B1-">B1- / Pre-Intermediate</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="results-content">
+                <div class="tabs-container">
+                    <button class="tab-button active" data-tab-target="#cans-content">strong points</button>
+                    <button class="tab-button" data-tab-target="#cant-content">areas for growth</button>
+                    <button class="tab-button" data-tab-target="#test-report">wrong answers list</button>
+                </div>
+                
+                <div class="results-container">
+                    <div id="cans-content" class="tab-panel active">
+                        <h3 class="panel-title">You most likely...</h3>
+
+                        <ul class="can-list can-list-B1-">
+                            <li>are watching «Топ-модель по-русски» and «Беременна в 16», even if you still need subtitles;</li>
+                            <li>understand that when someone tells you «Ну да, неплохо», it's not always true;</li>
+                            <li>know that the phrase «Я считаю» doesn't mean you’re a mathematician or an economist;</li>
+                            <li>can explain your boss that the project is ещё делается, уже сделан, or будет сделан very soon;</li>
+                            <li>have achieved true Zen, seamlessly connecting «яблоко», «яблоки», «яблокам» with the correct prepositions and verbs;</li>
+                            <li>know for a fact that you can either обниматься or обнимать друг друга and why so.</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div id="cant-content" class="tab-panel">
+                        <h3 class="panel-title">But you probably still...</h3>
+
+                        <ul class="cant-list cant-list-B1-"> 
+                            <li>sometimes ask speakers to slow down and clarify why «Разбежался!» means 'no way';</li>
+                            <li>cringe a bit when saying «Я не хочу ничего»;</li>
+                            <li>can't always form the sentence with «бы, если бы» perfectly;</li>
+                            <li>think that Russians use words «прошедший», «начинающийся», «заканчиваемый» to summon Lovecraftian chthonic monsters;</li>
+                            <li>might think that «Одна нога здесь, другая там» is a plane crash aftermath.</li>
+                        </ul>
+                    </div>
+
+                    <div id="test-report" class="tab-panel report">
+                            <h3 class="panel-title">Wrong answer #<span class="wrong-answer-number"></span></h3>
+                            <p class="sub-title"></p>
+
+                            <div class="report-quote">
+                                <p class="task-quote"></p>
+                                <p class="answer-quote">&#8203;<span class="user-answer"></span></p>
+                                <p class="answer-quote">&#8203;<span class="correct-answer"></span></p>
+                            </div>
+
+                            <p class="topic"></p>
+                    </div>
+
+                    <p class="results-yapping results-yapping-B1-">I can only imagine how many hours you've spent on Russian's complexities! This is a huge accomplishment, and you should be incredibly proud of yourself. I certainly am proud of you! And if there's any piece of Russian that is still a mystery to you, remember I'm always <a class="yapping-link" href="https://forms.gle/ZooS8dcTkAj3sdx1A">here</a> to help you reveal it.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="index.html" class="button">❮❮❮ 'Main Page'</a>
+                <button id="save-report-button" class="button save-report-button">save .txt list</button>
+            </div>
+        </main>
+
+        <script src="js/test_data.js"></script>
+        <script src="js/session-storage-logic.js"></script>
+        <script src="js/feedback.js"></script>
+        <script src="js/script-results.js"></script>
+    </body>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+</html>

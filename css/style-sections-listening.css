@@ -1,0 +1,131 @@
+.block-A {
+    width: 100%;
+}
+
+.block-B {
+    width: 100%;
+}
+
+.block-content-audio audio {
+    width: 100%;
+}
+
+/* --- pop-up --- */
+.interactive-container {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.interactive-word {
+    font-weight: bold;
+    color: #644fc1;
+    border-bottom: 0.1vw dashed #644fc1;
+}
+
+.word-popup {
+    visibility: hidden;
+    opacity: 0;
+    width: 13vw;
+    height: 11vw;
+    background-color: #efebff;
+    color: #644fc1;
+    text-align: center;
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+    padding: 1.6vw;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    font-family: 'Caveat', cursive;
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 2vw;
+}
+
+
+.word-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.5vw;
+    border-width: 0.5vw;
+    border-style: solid;
+    border-color: #efebff transparent transparent transparent;
+}
+
+.interactive-container:hover .word-popup {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* --- player --- */
+.block-content-audio audio {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    outline: none;
+}
+
+.custom-player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    width: 100%;
+}
+
+.player-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.player-button::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f144';
+    color: #ff99cc;
+}
+
+.player-button.is-playing::before {
+    content: '\f28b'; 
+    color: #644fc1;
+}
+
+.player-button.is-repeating::before {
+    content: '\f2f9';
+    color: #644fc1;
+}
+
+.player-button.is-forbidden::before {
+    content: '\f05e';
+    color: #ff99cc;
+}
+
+.progress-bar-container {
+    height: 0.8vw;
+    width: 100%;
+    background-color: #d8d6dd;
+    border-radius: 1vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #644fc1;
+}
+
+.progress-bar.is-finished {
+    background-color: #d8d6dd;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result: B1+</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-results.css">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <p class="pre-title">It looks like your level is</p>
+            <h1 id="result-B1+" class="main-title main-title-B1+">B1+ / Intermediate</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="results-content">
+                <div class="tabs-container">
+                    <button class="tab-button active" data-tab-target="#cans-content">strong points</button>
+                    <button class="tab-button" data-tab-target="#cant-content">areas for growth</button>
+                    <button class="tab-button" data-tab-target="#test-report">wrong answers list</button>
+                </div>
+                
+                <div class="results-container">
+                    <div id="cans-content" class="tab-panel active">
+                        <h3 class="panel-title">You most likely...</h3>
+
+                        <ul class="can-list can-list-B1+">
+                            <li>watch stand-ups, news and talk shows, documentaries, and perhaps into the future;</li>
+                            <li>realise that для того, чтобы reach this Russian level, you worked hard, поэтому you're awesome! (But, если you cheated on this test, tsk-tsk-tsk…);</li>
+                            <li>no longer fear that the words «увеличивая», «начинающийся», «заканчиваемый» have the power to awaken Lovecraft's chthonic monsters;</li>
+                            <li>understand that «через раз» and «как-нибудь» aren't just about quantity or a method;</li>
+                            <li>know that «было сделано» and «сделали» is a matter of perspective.</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div id="cant-content" class="tab-panel">
+                        <h3 class="panel-title">But you probably still...</h3>
+
+                        <ul class="cant-list cant-list-B1+"> 
+                            <li>can't do your own stand-up, because you’re not yet in the Nirvana of spontaneous speech;</li>
+                            <li>may think that «Одна нога здесь, другая там» is a consequence of a plane crash;</li>
+                            <li>will be shocked by speakers from Urals or the North of Russia, because were sure Russian has no dialects;</li>
+                            <li>sometimes forget that learning Russian is не то чтобы about memorisation, а скорее about fun.</li>
+                        </ul>
+                    </div>
+
+                    <div id="test-report" class="tab-panel report">
+                            <h3 class="panel-title">Wrong answer #<span class="wrong-answer-number"></span></h3>
+                            <p class="sub-title"></p>
+
+                            <div class="report-quote">
+                                <p class="task-quote"></p>
+                                <p class="answer-quote">&#8203;<span class="user-answer"></span></p>
+                                <p class="answer-quote">&#8203;<span class="correct-answer"></span></p>
+                            </div>
+
+                            <p class="topic"></p>
+                    </div>
+
+                    <p class="results-yapping results-yapping-B1+">You've achieved astonishing results, and I'm endlessly impressed by your knowledge and diligence! Your understanding is so systematised that even native speakers might ask for your advice! But if you need advice, don't forget that I'm always <a class="yapping-link" href="https://forms.gle/ZooS8dcTkAj3sdx1A">here</a>, and I'd be happy to help!</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="index.html" class="button">❮❮❮ 'Main Page'</a>
+                <button id="save-report-button" class="button save-report-button">save .txt list</button>
+            </div>
+        </main>
+
+        <script src="js/test_data.js"></script>
+        <script src="js/session-storage-logic.js"></script>
+        <script src="js/feedback.js"></script>
+        <script src="js/script-results.js"></script>
+    </body>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+</html>

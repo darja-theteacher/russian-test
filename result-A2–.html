@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result: A2—</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-results.css">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <p class="pre-title">It looks like your level is</p>
+            <h1 id="result-A2-" class="main-title main-title-A2-">A2- / Pre-Elementary</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="results-content">
+                <div class="tabs-container">
+                    <button class="tab-button active" data-tab-target="#cans-content">strong points</button>
+                    <button class="tab-button" data-tab-target="#cant-content">areas for growth</button>
+                    <button class="tab-button" data-tab-target="#test-report">wrong answers list</button>
+                </div>
+                
+                <div class="results-container">
+                    <div id="cans-content" class="tab-panel active">
+                        <h3 class="panel-title">You most likely...</h3>
+
+                        <ul class="can-list can-list-A2-">
+                            <li>can confidently buy tickets, book hotels, order food, and shop. Maybe you're even bold enough to visit the government service center or the tax office!* <p class="comment">*just kidding! We all know that even native speakers are not brave enough to go to the government service center or the tax office.</p></li>
+                            <li>can describe that guy from the party last night who got boozed, and how embarrassing things he did were;</li>
+                            <li>know exactly why it's «иди на хер» and not «ходи на хер»;</li>
+                            <li>describe your Tinder match and explain why they've captured your heart;</li>
+                            <li>know when something сломалось and when it сломали – you can't be tricked;</li>
+                            <li>understand that you walk по the street за groceries.</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div id="cant-content" class="tab-panel">
+                        <h3 class="panel-title">But you probably still...</h3>
+
+                        <ul class="cant-list cant-list-A2-"> 
+                            <li>avoid more complex topics, because you don't catch half of what others are saying and/or can't follow their train of thought;</li>
+                            <li>would probably skip a therapy session because self-reflection takes you too deep into abstract phrasing and descriptive structures;</li>
+                            <li>can't give the percise context of using «иди на хер»;</li>
+                            <li>find your eyelid twitching and your brain boiling when trying to use «яблоко», «яблока», «яблоку», «яблоком», «яблоке» in one sentence or text, especially with prepositions;</li>
+                            <li>aren't quite sure if you are делаешь an assignment or have already сделал it;</li>
+                            <li>don't fully grasp the purpose of both «и» and «а» in Russian, because their sentence roles aren't clear to you.</li>
+                        </ul>
+                    </div>
+
+                    <div id="test-report" class="tab-panel report">
+                            <h3 class="panel-title">Wrong answer #<span class="wrong-answer-number"></span></h3>
+                            <p class="sub-title"></p>
+
+                            <div class="report-quote">
+                                <p class="task-quote"></p>
+                                <p class="answer-quote">&#8203;<span class="user-answer"></span></p>
+                                <p class="answer-quote">&#8203;<span class="correct-answer"></span></p>
+                            </div>
+
+                            <p class="topic"></p>
+                    </div>
+
+                    <p class="results-yapping results-yapping-A2-">It's a major achievement! It reflects your courage and confidence! You didn't give up under the pressure of not-so-obvious Russian challenges! Move forward; success is undoubtedly yours! And if you need some help, remember I'm always <a class="yapping-link" href="https://forms.gle/ZooS8dcTkAj3sdx1A">here</a> and happy to smooth your path.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="index.html" class="button">❮❮❮ 'Main Page'</a>
+                <button id="save-report-button" class="button save-report-button">save .txt list</button>
+            </div>
+        </main>
+
+        <script src="js/test_data.js"></script>
+        <script src="js/session-storage-logic.js"></script>
+        <script src="js/feedback.js"></script>
+        <script src="js/script-results.js"></script>
+    </body>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+</html>

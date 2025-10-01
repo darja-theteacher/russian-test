@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening, Part 2/3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Caveat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sections.css">
+    <link rel="stylesheet" href="css/style-sections-listening.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-left">
+            <h1 class="page-title">Section 2: Listening</h1>
+            <div class="progress-indicator">
+                <a href="reading-pt-1.html" class="progress-step done"></a>
+                <a href="reading-pt-2.html" class="progress-step done"></a>
+                <a href="reading-pt-3.html" class="progress-step done"></a>
+                <a href="reading-pt-4.html" class="progress-step done"></a>
+                <a href="reading-pt-5.html" class="progress-step done"></a>
+                <a href="listening-pt-1.html" class="progress-step done"></a>
+                <a href="listening-pt-2.html" class="progress-step in-progress"></a>
+                <a href="listening-pt-3.html" class="progress-step"></a>
+                <a href="grammar-test.html" class="progress-step"></a>
+            </div>
+        </div>
+        <a href="index.html" class="button header-button">❮❮❮ 'Main Page'</a>
+    </header>
+
+    <main class="main-content">
+
+        <div class="block-A">
+            <div class="block-header">
+                <div class="block-lable">A.</div>
+                <div class="block-title">Listen to the audio.<br>You can play it <b>twice!</b></div>
+            </div>
+            <div class="block-content content-A">
+                <p class="block-content-title">Аудио 2. 
+                    <span class="interactive-container">
+                        <span class="interactive-word">Ржáвая</span>
+                        <span class="word-popup">ржáвый — <br> rusty (lit.);<br>reddish-brown (color).</span>
+                    </span> кошка — самая маленькая кошка в мире
+                </p>
+                <div class="block-content-audio">
+                    <audio id="custom-player">
+                        <source src="assets/audios/audio-2-rzhavaya-koshka.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="custom-player-controls">
+                        <button class="player-button"></button>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-B">
+            <div class="block-header">
+                <div class="block-lable">B.</div>
+                <div class="block-title">Choose 'Правда' or 'Неправда' for each<br>statement and answer the question.</div>
+            </div>
+            <div class="block-content content-B">
+                <div class="block-item">
+                    <p id="quote-listening-pt2-q1" class="block-question">1. Ржавая кошка весит от 1 до 2 килограмм.</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt2-q1-true" name="listening-pt2-q1" value="Правда" />
+                        <label class="radio-lable" for="listening-pt2-q1-true">Правда</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt2-q1-false" name="listening-pt2-q1" value="Неправда" />
+                        <label class="radio-lable" for="listening-pt2-q1-false">Неправда</label>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <p id="quote-listening-pt2-q2" class="block-question">2. Ржавая кошка живёт на деревьях.</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt2-q2-true" name="listening-pt2-q2" value="Правда" />
+                        <label class="radio-lable" for="listening-pt2-q2-true">Правда</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt2-q2-false" name="listening-pt2-q2" value="Неправда" />
+                        <label class="radio-lable" for="listening-pt2-q2-false">Неправда</label>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <p id="quote-listening-pt2-q3" class="block-question">3. Что можно сказать о ржавой кошке?</p>
+                    <div class="block-answer">
+                        <input class="radio-input" type="radio" id="listening-pt2-q3-opt1" name="listening-pt2-q3" value="охотится днём" />
+                        <label class="radio-lable" for="listening-pt2-q3-opt1">Она охотится днём на мышей, птиц и насекомых.</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt2-q3-opt2" name="listening-pt2-q3" value="быстро двигается" />
+                        <label class="radio-lable" for="listening-pt2-q3-opt2">Она быстро двигается, хорошо видит и прячется в высокой траве.</label>
+                        <br>
+                        <input class="radio-input" type="radio" id="listening-pt2-q3-opt3" name="listening-pt2-q3" value="легко увидеть" />
+                        <label class="radio-lable" for="listening-pt2-q3-opt3">Её легко увидеть в лесах Индии и Шри-Ланки.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a class="button" href="listening-pt-1.html">❮❮❮ 'Back'</a>
+            <a class="button" href="listening-pt-3.html">'Next' ❯❯❯</a>
+        </div>
+
+    </main>
+
+    <footer>
+            <div class="footer-content">
+                <p class="copyright">(c) 2025 Darja The Teacher. All rights reserved.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@darya.teachmerussian" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://forms.gle/ZooS8dcTkAj3sdx1A" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>teach me russian, Darja!</span>
+                    </a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/test_data.js"></script>
+    <script src="js/session-storage-logic.js"></script>
+    <script src="js/script-listening.js"></script>
+</body>
+
+</html>
